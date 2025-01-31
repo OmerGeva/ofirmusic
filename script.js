@@ -71,4 +71,6 @@ function createTrail(color = 'gold', length = 1) {
   document.body.appendChild(svg);
 }
 
-window.addEventListener('mousemove', updatePointer);
+if (!('ontouchstart' in window)) {
+    window.addEventListener('mousemove', updatePointer);
+}
