@@ -1,15 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const overlay = document.querySelector(".hero .overlay");
-  const triggerHeight = window.innerHeight * 0.3;
+  const headerLogo = document.querySelector(".header-logo");
+  const triggerHeight = window.innerHeight * 0.5; // 50vh
 
   window.addEventListener("scroll", function () {
     if (window.scrollY > triggerHeight) {
-      overlay.classList.add("fixed");
+      headerLogo.classList.add("visible");
     } else {
-      overlay.classList.remove("fixed");
+      headerLogo.classList.remove("visible");
     }
   });
 });
+
 
 const SVGNS = 'http://www.w3.org/2000/svg';
 const EASE = 0.7;
