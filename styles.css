@@ -541,6 +541,7 @@ footer {
     padding: 40px 15px; /* Reduce padding */
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0) 50%), 
     url(./images/photo_6.jpg);
+    background-attachment: scroll;
     background-size: 145%;
     /* background-position: 0 50%; */
   }
