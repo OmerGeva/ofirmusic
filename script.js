@@ -1,3 +1,16 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const overlay = document.querySelector(".hero .overlay");
+  const triggerHeight = window.innerHeight * 0.3;
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > triggerHeight) {
+      overlay.classList.add("fixed");
+    } else {
+      overlay.classList.remove("fixed");
+    }
+  });
+});
+
 const SVGNS = 'http://www.w3.org/2000/svg';
 const EASE = 0.7;
 const pointer = {
@@ -8,31 +21,32 @@ const pointer = {
 function updatePointer(event) {
   pointer.x = event.clientX;
   pointer.y = event.clientY;
-  createTrail('gold', 1); // Create a single sparkle at the pointer location
+  createTrail('gold', 1);
 }
+
 
 function createStarSparkle(x, y) {
   const star = document.createElementNS(SVGNS, 'polygon');
   
-  // Define a star shape with five points
+ 
   star.setAttribute('points', '10,1 12,7 18,7 13,11 15,17 10,13 5,17 7,11 2,7 8,7');
   star.style.fill = 'gold';
-  star.style.opacity = Math.random() * 0.8 + 0.2; // Random opacity for sparkle effect
+  star.style.opacity = Math.random() * 0.8 + 0.2;
 
-  // Set initial position, scale, and rotation
+ 
   gsap.set(star, {
     x: x,
     y: y,
-    scale: Math.random() * 0.5 + 0.5,   // Scale between 0.5 and 1
-    rotation: Math.random() * 360       // Random rotation for each star
+    scale: Math.random() * 0.5 + 0.5,  
+    rotation: Math.random() * 360      
   });
 
-  // Animate the star sparkle to fade out and grow
+ 
   gsap.to(star, {
-    opacity: 0,  // Fades out for sparkle effect
-    scale: Math.random() * 1.5 + 0.5,  // Random scale change for sparkle effect
-    duration: Math.random() * 0.8 + 0.3,  // Random duration for each sparkle
-    onComplete: () => star.remove()  // Remove star from DOM after animation
+    opacity: 0, 
+    scale: Math.random() * 1.5 + 0.5, 
+    duration: Math.random() * 0.8 + 0.3, 
+    onComplete: () => star.remove() 
   });
 
   return star;

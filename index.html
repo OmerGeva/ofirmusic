@@ -2,13 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <title>Ofir - Musician</title>
   <link rel="stylesheet" href="styles.css">
   <!-- Font Awesome for Social Media Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
-  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Full_Star_Yellow.svg/32px-Full_Star_Yellow.svg.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   
   <!-- GSAP for Animations -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
@@ -16,15 +19,10 @@
 <body>
   <div id="root">
     
-    <!-- Sparkle Effect Container -->
     <div id="sparkle-container"></div>
     
-    <!-- Header with Logo -->
     <header>
-      <div class="logo">
-        <img src="images/logo.svg" alt="Ofir Logo">
-      </div>
-      <!-- Social Media Icons -->
+
       <div class="social-icons">
         <a href="https://www.instagram.com/ofirelboym" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://www.tiktok.com/@ofiir" target="_blank"><i class="fab fa-tiktok"></i></a>
@@ -32,13 +30,13 @@
     </header>
     
     <main>
-      <!-- Hero Section -->
       <section class="hero">
         <div class="hero-content">
           <img src="images/photo_1.jpg" alt="Ofir" class="hero-image">
           <div class="overlay">
-            <h1 class="title">Ofir</h1>
-            <h2 class="subtitle">New Single <span>Out Now</span></h2>
+            <div class="logo">
+              <img src="images/logo.svg" alt="Ofir Logo">
+            </div>
           </div>
         </div>
       </section>
@@ -46,13 +44,8 @@
       <section class="music-landing">
         <div class="music-landing-content-container">
           <div class="music-headline-container">
-            <h1 class="landing-title">Listen Now On Spotify!</h1>
-            
-          </div>
-          
-          <div class="album-container">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4lcrvzi9aCUdcPLJIdo9FB?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            <!-- Ofir's Track Embedded -->
+            <h2 class="landing-title">intertwined</h2>
+            <p class="landing-title">New Single</p>
           </div>
           
           <div class="spotify-link-container">
@@ -61,22 +54,43 @@
               <img src="https://cdn.prod.website-files.com/5da7642c01f5a240e611bf48/63926c15c3e4fcce6e5d7c6c_file-spotify-logo-png-4.png" alt="Spotify Logo" class="spotify-icon">
             </a>
           </div>
+          
+          <div class="album-container">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4lcrvzi9aCUdcPLJIdo9FB?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <!-- <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6cN8DDA1mXpukgwuzjJvW2?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> -->
+            <!-- Ofir's Track Embedded -->
+          </div>
+          
         </div>
       </section>
+      <!--       
       
-      
-      <!-- Spotify Section -->
-      <section class="spotify">
+      <section class="merch">
         <h2>✨ Merch coming soon ✨</h2>
-        <div class="spotify-widget">
+        <div class="merch-image">
           <img src="images/photo_2.jpg" alt="ofiriii">
         </div>
       </section>
+      -->
+      <section class="tracklist">
+        <h2 class="tracklist-title">where the loves goes</h2>
+        <!-- <p>coming soon</p> -->
+        <div class="tracklist-container">
+          <span class="track-name">Interlude</span>
+          <span class="track-name">MIA</span>
+          <span class="track-name">Different State</span>
+          <span class="track-name">Where the Love Goes</span>
+          <span class="track-name">Will You Text Me on My Birthday?</span>
+          <span class="track-name">Second Choice</span>
+          <span class="track-name">Strings</span>
+          <span class="track-name">Chance</span>
+          <span class="track-name">Intertwined</span>
+        </div>
+      </section>
       
-      <!-- Contact Section -->
       <section class="contact">
         <h2>Contact</h2>
-        <p>For inquiries, please email: <u><a href="mailto:contact@ofirmusic.com">contact@ofirmusic.com</a></u></p>
+        <p>For inquiries, please email: <u><a href="mailto:musicofirelboym@gmail.com">musicofirelboym@gmail.com</a></u></p>
       </section>
     </main>
     
