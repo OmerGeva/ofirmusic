@@ -16,6 +16,7 @@
 body {
   font-family: "Raleway", serif;
   color: var(--primary-white);
+  margin: 0;
 }
 
 h2 {
