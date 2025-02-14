@@ -10,6 +10,7 @@
   --text-color: #23313c; /* Deep Blue-Green */
   --text-light: #b9d9eb; /* Light Blue */
   --highlight-color: #d94a3f; /* Same as Accent Color */
+  --footer-color: #F8F7FF;
   --shadow-color: rgba(67, 83, 116, 0.3); /* Shadow inspired by primary color */
 }
 
@@ -186,7 +187,8 @@ header {
 footer {
   text-align: center;
   padding: 20px;
-  background-color: var(--text-color);
+  background-color: var(--footer-color);
+  color: var(--text-color);
   font-size: 0.9rem;
 }
 
@@ -547,7 +549,7 @@ footer {
     /* background-position: 0 50%; */
   }
   .music-landing-content-container {
-    top: 15%; /* Adjust positioning */
+    top: 10%; /* Adjust positioning */
     left: 10%;
     width: 90%; /* Allow more flexibility for content */
     padding: 0; /* Remove extra padding */
@@ -605,7 +607,6 @@ footer {
   .track-name {
     font-size: 1rem; /* Scale down track name size */
   }
-
 
   .hero .overlay.fixed {
     position: fixed;
